@@ -1,5 +1,6 @@
 package app.motsu.hiromoto.quiz
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.isVisible
@@ -37,6 +38,11 @@ class QuizActivity : AppCompatActivity() {
         nextButton.setOnClickListener {
             if(quizCount == quizLists.size){
                 // end
+                val resultIntent = Intent(this, ResultActivity::class.java)
+                resultIntent.putExtra("QuizCount",quizLists.size)
+                resultIntent.putExtra("CorrectCount",correctCount)
+                startActivity(resultIntent)
+                //finish()
             }else{
                 // continue
                 imageView.isVisible = false
