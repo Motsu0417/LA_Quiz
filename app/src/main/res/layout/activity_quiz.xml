@@ -4,6 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#E6DEC8"
+    android:visibility="visible"
     tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/quizText"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correctAnswerText"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizText" />
+
+    <Button
+        android:id="@+id/answerButton1"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1982DC"
+        android:insetLeft="40dp"
+        android:insetRight="40dp"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/answerButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswerText" />
+
+    <Button
+        android:id="@+id/answerButton2"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1982DC"
+        android:insetLeft="40dp"
+        android:insetRight="40dp"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerButton1" />
+
+    <Button
+        android:id="@+id/answerButton3"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#1982DC"
+        android:insetLeft="40dp"
+        android:insetRight="40dp"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerButton2" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="411dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#D57D7D"
+        android:insetLeft="50dp"
+        android:insetRight="50dp"
+        android:text="次へ進む"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerButton3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="731dp"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/maru_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
